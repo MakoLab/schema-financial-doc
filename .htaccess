@@ -1,0 +1,13 @@
+RewriteEngine	On
+
+#RedirectMatch 303 /community.* http://www.w3.org/community/fibo
+
+#RedirectMatch 303 "^/schema.*" http://www.edmcouncil.org/fiboschema
+
+#RewriteCond	"%{REQUEST_URI}"	"^\/schema.*$"
+RewriteRule	"^community"	http://www.w3.org/community/fibo	[L,R=303]
+RewriteRule	"^schema"	http://www.edmcouncil.org/fiboschema	[L,R=303]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule	".*"		http://www.edmcouncil.org/financialbusiness	[R=303]

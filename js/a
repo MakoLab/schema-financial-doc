@@ -1,0 +1,12 @@
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['search']) {
+window['google']['search'] = {};
+google.search.Version = '1.0';
+google.search.NoOldNames = false;
+google.search.JSHash = '581c068e7ad56cae00e4e2e8f7dc3837';
+google.search.LoadArgs = 'file\x3dsearch\x26v\x3d1\x26hl\x3den\x26style\x3d%2F%2Fwww.google.com%2Fcse%2Fstatic%2Fstyle%2Flook%2Fespresso.css';
+}
+google.loader.writeLoadTag("css", google.loader.ServiceBase + "/api/search/1.0/581c068e7ad56cae00e4e2e8f7dc3837/default+en.css", false);
+google.loader.writeLoadTag("css", "//www.google.com/cse/static/style/look/espresso.css", false);
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/search/1.0/581c068e7ad56cae00e4e2e8f7dc3837/default+en.I.js", false);
+}
